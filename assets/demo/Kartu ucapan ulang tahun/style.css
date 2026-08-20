@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff6b9d, #c44cff, #6a5cff);
+}
+
+.birthday-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 45px 35px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.birthday-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.balloons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.balloons span {
+  font-size: 45px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.balloons span:hover {
+  transform: translateY(-10px) rotate(10deg);
+}
+
+.cake {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 #8b2fc9;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #ffe082;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.wish {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffe082;
+}
+
+.from {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-style: italic;
+  color: #f5d9ff;
+}
+
+@media (max-width: 600px) {
+  .birthday-card {
+    padding: 35px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .cake {
+    font-size: 65px;
+  }
+
+  .balloons span {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

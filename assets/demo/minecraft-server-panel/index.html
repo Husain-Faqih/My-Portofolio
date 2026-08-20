@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Minecraft Server Panel</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Server Logo" />
+        <div>
+          <h2>SERVER YOU</h2>
+          <span>SERVER PANEL</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-link active" data-page="dashboard">
+          <img src="assets/icons/dashboard.svg" alt="" />
+          <span>Dashboard</span>
+        </a>
+
+        <a href="#" class="nav-link" data-page="player">
+          <img src="assets/icons/players.svg" alt="" />
+          <span>Players</span>
+        </a>
+
+        <a href="#" class="nav-link" data-page="console">
+          <img src="assets/icons/console.svg" alt="" />
+          <span>Console</span>
+        </a>
+
+        <a href="#" class="nav-link" data-page="world">
+          <img src="assets/icons/world.svg" alt="" />
+          <span>Worlds</span>
+        </a>
+
+        <a href="#" class="nav-link" data-page="statistics">
+          <img src="assets/icons/stats.svg" alt="" />
+          <span>Statistics</span>
+        </a>
+
+        <a href="#" class="nav-link" data-page="settings">
+          <img src="assets/icons/settings.svg" alt="" />
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="server-status">
+        <span class="status-dot"></span>
+
+        <div>
+          <strong>SERVER ONLINE</strong>
+          <small>play.ryuze.dev</small>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="breadcrumb">SERVER / DASHBOARD</p>
+          <h1>Dashboard</h1>
+          <p class="subtitle">Manage your Minecraft server</p>
+        </div>
+
+        <div class="server-info">
+          <span>SERVER IP</span>
+
+          <strong> play.ryuze.dev </strong>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <img src="assets/icons/players.svg" alt="" />
+          </div>
+
+          <div>
+            <span>PLAYERS</span>
+            <h2 id="palyer-count">8 / 20</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <span>⚡</span>
+          </div>
+
+          <div>
+            <span>TPS</span>
+            <h2 id="tps-value">20.0</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <span>▣</span>
+          </div>
+
+          <div>
+            <span>RAM USAGE</span>
+            <h2 id="ram-value">3.2 GB</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <span>◷</span>
+          </div>
+
+          <div>
+            <span>UPTIME</span>
+            <h2 id="uptime-value">12h 34m</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel server-control">
+        <div class="panel-header">
+          <div>
+            <h2>Server Control</h2>
+            <p>Manage server status</p>
+          </div>
+
+          <span class="online-badge"> ● ONLINE </span>
+        </div>
+
+        <div class="control-buttons">
+          <button id="start-btn">▶ START</button>
+
+          <button id="stop-btn">■ STOP</button>
+
+          <button id="restart-btn">↻ RESTART</button>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel players-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Players Online</h2>
+              <p>Currently connected players</p>
+            </div>
+
+            <span id="player-online-count"> 8 Players </span>
+          </div>
+
+          <div class="player-list">
+            <div class="player">
+              <div class="player-avatar">H</div>
+
+              <div>
+                <strong>Alexa</strong>
+                <small>Online</small>
+              </div>
+            </div>
+
+            <div class="player">
+              <div class="player-avatar">S</div>
+
+              <div>
+                <strong>Steve</strong>
+                <small>Online</small>
+              </div>
+            </div>
+
+            <div class="player">
+              <div class="player-avatar">A</div>
+
+              <div>
+                <strong>Alex</strong>
+                <small>Online</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel console-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Console</h2>
+              <p>Live server logs</p>
+            </div>
+
+            <span class="console-live"> LIVE </span>
+          </div>
+
+          <div class="console">
+            <p>
+              <span>[10:04:21]</span>
+              Server started
+            </p>
+
+            <p>
+              <span>[10:04:32]</span>
+              Player Alexa joined
+            </p>
+
+            <p>
+              <span>[10:05:01]</span>
+              Player Steve joined
+            </p>
+
+            <p>
+              <span>[10:05:14]</span>
+              Saving world...
+            </p>
+
+            <p>
+              <span>[10:05:21]</span>
+              World saved successfully
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

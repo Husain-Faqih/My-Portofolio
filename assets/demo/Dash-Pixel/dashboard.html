@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Husain | Minecraft Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="minecraft-overlay"></div>
+  <header class="dashboard-header">
+    <div class="logo">
+      <span>⛏</span>
+      YOU.DEV
+    </div>
+    <div class="server-status">
+      <span class="status-dot"></span>
+      SERVER ONLINE
+    </div>
+  </header>
+  <main class="dashboard">
+    <!-- PLAYER PROFILE -->
+    <section class="player-card">
+      <div class="player-image">
+        <img src="assets/img/#.png" alt="Player Husain" />
+      </div>
+      <div class="player-info">
+        <p class="small-title">PLAYER</p>
+        <h1>example</h1>
+        <p class="rank">
+          <i class="fa-solid fa-crown"></i>
+          WEB DEVELOPER
+        </p>
+        <div class="level">
+          <span>LEVEL 5</span>
+          <span>100 / 1000 XP</span>
+        </div>
+        <div class="xp-bar">
+          <div class="xp-fill"></div>
+        </div>
+      </div>
+    </section>
+    <section class="dashboard-section">
+      <h2>
+        <i class="fa-solid fa-chart-simple"></i>
+        PLAYER STATS
+      </h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
+          <strong>85%</strong>
+          <div class="stat-bar">
+            <div style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
+          <strong>80%</strong>
+          <div class="stat-bar">
+            <div style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-brands fa-js"></i>
+          <span>JAVASCRIPT</span>
+          <strong>55%</strong>
+          <div class="stat-bar">
+            <div style="width: 55%"></div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-brands fa-linux"></i>
+          <span>LINUX</span>
+          <strong>70%</strong>
+          <div class="stat-bar">
+            <div style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dashboard-section">
+      <h2>
+        <i class="fa-solid fa-scroll"></i>
+        ACTIVE QUEST
+      </h2>
+      <div class="quest-card">
+        <div class="quest-icon">⚔️</div>
+        <div class="quest-info">
+          <h3>BUILD PORTFOLIO</h3>
+          <p>Membuat portfolio Minecraft dengan HTML, CSS dan JavaScript.</p>
+          <div class="quest-progress">
+            <div></div>
+          </div>
+          <small>QUEST PROGRESS: 7%</small>
+          <button class="quest-btn" id="complete-quest">
+            COMPLETE QUEST +100 XP
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="dashboard-section">
+      <h2>
+        <i class="fa-solid fa-box"></i>
+        INVENTORY
+      </h2>
+      <div class="inventory">
+        <div class="item">
+          <span>💻</span>
+          <small>VS CODE</small>
+        </div>
+
+        <div class="item">
+          <span>🐧</span>
+          <small>LINUX</small>
+        </div>
+
+        <div class="item">
+          <span>🌐</span>
+          <small>HTML</small>
+        </div>
+
+        <div class="item">
+          <span>🎨</span>
+          <small>CSS</small>
+        </div>
+
+        <div class="item">
+          <span>⚡</span>
+          <small>JS</small>
+        </div>
+
+        <div class="item">
+          <span>⛏️</span>
+          <small>CODING</small>
+        </div>
+      </div>
+    </section>
+    <section class="navigation">
+      <a href="index.html" class="menu-btn">
+        <i class="fa-solid fa-house"></i>
+        BERANDA
+      </a>
+
+      <a href="tentang.html" class="menu-btn">
+        <i class="fa-solid fa-user"></i>
+        TENTANG
+      </a>
+
+      <a href="projek.html" class="menu-btn">
+        <i class="fa-solid fa-cube"></i>
+        PROJEK
+      </a>
+
+      <a href="kontak.html" class="menu-btn">
+        <i class="fa-solid fa-envelope"></i>
+        KONTAK
+      </a>
+    </section>
+  </main>
+  <footer>
+    <p>HUSAIN.DEV © 2026 | SURVIVAL MODE</p>
+  </footer>
+  <div id="level-up" class="level-up">
+    <div class="level-up-box">
+      <span class="level-icon">⬆</span>
+    </div>
+    <strong>LEVEL UP!</strong>
+    <small id="level-up-text">LEVEL 13</small>
+  </div>
+
+  <div id="item-popup" class="item-popup">
+    <div class="item-popup-box">
+      <span id="popup-icon">💻</span>
+      <strong id="popup-name">VC CODE</strong>
+      <small id="popup-decription"> Code Editor </small>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

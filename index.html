@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSAIN.DEV | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+
+    <header>
+        <nav>
+            <h2>HUSAIN.DEV</h2>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="menu-toggle" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HOME ===== -->
+
+        <section id="home">
+            <p>HELLO, I'M</p>
+            <h1>HUSAIN</h1>
+            <h2 id="typing-text">
+                WEB DEVELOPER IN TRAINING
+            </h2>
+            <p>
+                Building my digital world with HTML, CSS, and JavaScript.
+            </p>
+            <a href="#projects" class="hero-button">
+                View Projects
+            </a>
+        </section>
+
+
+        <!-- ===== ABOUT ===== -->
+
+        <section id="about" class="reveal">
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="avatar">
+                        <img src="assets/image/profile.jpeg" alt="Foto profil Husain">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+                    <h2>
+                        I'm
+                        <span class="highlight">
+                            FrontEnd Developer
+                        </span>
+                    </h2>
+                    <p>
+                        Hello! I'm Husain, a beginner web developer
+                        who is currently learning HTML, CSS, and JavaScript.
+                    </p>
+                    <p>
+                        I enjoy creating websites, experimenting with
+                        designs, and learning new things about technology.
+                    </p>
+                    <div class="about-stats">
+                        <div>
+                            <h3>03+</h3>
+                            <p>Skills</p>
+                        </div>
+                        <div>
+                            <h3>04+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div>
+                            <h3>∞</h3>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== SKILLS ===== -->
+
+        <section id="skills" class="reveal">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <span class="skill-number">01</span>
+                    </div>
+                    <div class="skill-icon html-icon">
+                        &lt;/&gt;
+                    </div>
+                    <div class="skill-content">
+                        <h3>HTML</h3>
+
+                        <p>
+                            Building semantic structures for modern websites.
+                        </p>
+
+                        <span class="skill-status">
+                            <span class="status-dot"></span>
+                            Comfortable
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <span class="skill-number">02</span>
+                    </div>
+                    <div class="skill-icon css-icon">
+                        #
+                    </div>
+                    <div class="skill-content">
+                        <h3>CSS</h3>
+
+                        <p>Creating responsive and modern user interfaces.
+                        </p>
+
+                        <span class="skill-status">
+                            <span class="status-dot"></span>
+                            Comfortable
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-top">
+                        <span class="skill-number">03</span>
+                    </div>
+                    <div class="skill-icon jas-icon">
+                        JS
+                    </div>
+                    <div class="skill-content">
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Adding interaction, logic, and dynamic experienes.
+                        </p>
+
+                        <span class="skill-status">
+                            <span class="status-dot"></span>
+                            Currently Learning
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== PROJECTS ===== -->
+
+        <section id="projects" class="reveal">
+            <p class="section-label">
+                MY WORK
+            </p>
+            <h2>
+                Featured Projects
+            </h2>
+            <div class="projects-container">
+                <!-- PROJECT 01 -->
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/image/login-page.PNG" alt="Login page project" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-number">
+                            01
+                        </span>
+                        <h3>
+                            Login Page Display
+                        </h3>
+                        <p>
+                            An attractive and simple login page design.
+                        </p>
+                        <div class="tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="assets/demo/login/index.html" class="project-link">
+                            Live Demo →
+                        </a>
+                        <a href="https://github.com/Husain-Faqih/Display-login" class="project-link">
+                            Source Code →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 02 -->
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/image/card-greeting-birthday.PNG" alt="Birthday greeting card project">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-number">
+                            02
+                        </span>
+                        <h3>
+                            Birthday Greeting Card
+                        </h3>
+                        <p>
+                            A modern birthday greeting card created
+                            using basic HTML and CSS.
+                        </p>
+                        <div class="tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="assets/demo/Kartu ucapan ulang tahun/index.html" class="project-link">
+                            Live Demo →
+                        </a>
+                        <a href="https://github.com/Husain-Faqih/Kartu-Ucapan-Ulang-Tahun" class="project-link">
+                            Source Code →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/image/dash-min.png" alt="Dashboard tampilan pixel">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-number">
+                            03
+                        </span>
+                        <h3>
+                            Pixel dashboard
+                        </h3>
+                        <p>
+                            A modern pixel server dashboard
+                        </p>
+                        <div class="tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="assets/demo/Dash-Pixel/dashboard.html" class="project-link">
+                            Live Demo →
+                        </a>
+                        <a href="https://github.com/Husain-Faqih/dash-pixel" class="project-link">
+                            Source Code →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card featured-project">
+                    <div class="project-image">
+                        <img src="assets/image/minecraft-server-panel.PNG" alt="Minecraft Server Panel dashboard"
+                            loading="lazy">
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-number">04</span>
+
+                        <h3>Minecraft Server Panel</h3>
+
+                        <p>
+                            A modern Minecraft server panel designed
+                            with a clean and responsive interface.
+                        </p>
+
+                        <div class="tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <a href="assets/demo/minecraft-server-panel/index.html" class="project-link">
+                            Live Demo →
+                        </a>
+
+                        <a href="https://github.com/Husain-Faqih/Minecraft-Server-Panel" class="project-link">
+                            Source Code →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== CONTACT ===== -->
+
+        <section id="contact" class="reveal">
+            <div class="contact-container">
+                <p class="section-label">
+                    CONTACT
+                </p>
+                <h2>
+                    Let's Build Something Together
+                </h2>
+                <p class="contact-description">
+                    Have an idea or just want to say hello?
+                    Feel free to reach out.
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/Husain-Faqih" class="contact-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <span>↗</span>
+                    </a>
+                    <a href="https://wa.me/62882008208842" class="contact-card" target="_blank"
+                        rel="noopener noreferrer">
+                        <span>WhatsApp</span>
+                        <span>↗</span>
+                    </a>
+                    <a href="mailto:obatherbal455@gmail.com" class="contact-card">
+                        <span>Email</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <div class=" footer-container">
+            <h2>
+                HUSAIN<span>.DEV</span>
+            </h2>
+            <p>
+                Building my digital world with HTML, CSS & JavaScript.
+            </p>
+            <div class="footer-line"></div>
+            <p class="copyright">
+                © 2026 HUSAIN.DEV — Built with passion.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
