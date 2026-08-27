@@ -64,8 +64,6 @@ function typeEffect() {
 
 typeEffect();
 
-// ===== SCROLL REVEAL =====
-
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(

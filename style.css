@@ -353,7 +353,7 @@ section {
 @keyframes codeWindowEnter {
   from {
     opacity: 0;
-    transform: translate(70px, -50%);
+    transform: translate(80px, -50%);
   }
 
   to {
